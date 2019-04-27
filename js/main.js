@@ -4,7 +4,7 @@ var countProjetos = 0;
 
 btn.addEventListener("click",function(){
     var ourRequest = new XMLHttpRequest();
-    ourRequest.open('GET','./data.json');
+    ourRequest.open('GET','./json/data.json');
     ourRequest.onload = function(){
         var ourData = JSON.parse(ourRequest.responseText);
         renderHTML(ourData);
