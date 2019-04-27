@@ -1,21 +1,21 @@
 [
     {
         "nome":"site legal1",
-        "imagem":"imagem1",
+        "imagem":"../assets/imagens/imagem.png",
         "descricao":"uma breve descricao apra um site legal.1",
         "link":"https://www.google.com",
         "codigoFonte":"https://www.google.com.br"
     },
     {
         "nome":"site legal2",
-        "imagem":"imagem2",
+        "imagem":"../assets/imagens/imagem.png",
         "descricao":"uma breve descricao apra um site legal.2",
         "link":"https://www.google.com",
         "codigoFonte":"https://www.google.com.br"
     },
     {
         "nome":"site legal3",
-        "imagem":"imagem3",
+        "imagem":"../assets/imagens/imagem.png",
         "descricao":"uma breve descricao apra um site legal.3",
         "link":"https://www.google.com",
         "codigoFonte":"https://www.google.com.br"

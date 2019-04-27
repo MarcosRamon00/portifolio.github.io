@@ -20,7 +20,7 @@ function renderHTML(data){
     for (i = 0;i < data.length; i++){
         htmlString += "<div class='col-sm-12 col-md-4 bloco_projeto'>" +
         "<h3 class='text-center'>" + data[i].nome + "</h3>" +
-        "<p>" + data[i].imagem +"</p>" +
+        "<img src='" + data[i].imagem +"' class='img-fluid'>" +
         "<h4>Descrição</h4>" + 
         "<p>" + data[i].descricao + "</p>" +
         "<div class='btn-group btn-block'>" +
