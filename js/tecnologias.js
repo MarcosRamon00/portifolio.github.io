@@ -20,7 +20,7 @@ function renderTodasTecnologias(data){
     var bloco_tecnologia = "";
     for (i = 0;i < data.length;i++){
         bloco_tecnologia += "<div class='col-sm-12 col-md-2 bloco_tecnologia'>" +
-        "<img src='" + data[i].imagem +"'>" +  
+        "<img src='" + data[i].imagem +"' class='img-fluid'>" +  
         "<h3 class='text-center'>" + data[i].nome + "</h3>" + 
          "</div>";
     }
