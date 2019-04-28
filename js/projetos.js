@@ -18,8 +18,8 @@ function renderTodosProjetos(data){
         "<h4>Descrição</h4>" + 
         "<p>" + data[i].descricao + "</p>" +
         "<div class='btn-group btn-block'>" +
-            "<a href='" + data[i].link + "' class='btn btn-primary '>ver projeto</a>" +
-            "<a href='" + data[i].codigoFonte + "' class='btn btn-primary '>código fonte</a>" +
+            "<a href='" + data[i].link + "' class='btn btn-secondary '>ver projeto</a>" +
+            "<a href='" + data[i].codigoFonte + "' class='btn btn-secondary '>código fonte</a>" +
         "</div>" +   
          "</div>";
     }
