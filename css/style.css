@@ -1,18 +1,47 @@
-body{
+
+#contato .list-inline .list-inline-item a{
+    color: black;
     text-decoration: none;
 }
-#bloco_texto_sobre{
-    margin:50px;
+#contato .list-inline .list-inline-item:before{
+    content: '[';
 }
-.bloco_projeto{
-    padding: 20px;
+#contato .list-inline .list-inline-item:hover:before{
+    padding: 10px;
 }
-#rodape{
+#contato .list-inline .list-inline-item:after{
+    content: ']';
+}
+#contato .list-inline .list-inline-item:hover:after{
+    padding: 10px;
+}
+
+/*--projetos--*/
+#titulo_portifolio{
     margin-top:10px;
-    padding:40px;
-    background-color: black;
-    color:whitesmoke;
+    margin-bottom: 20px;
 }
-#rodape div ul li a:hover{
-    border-bottom: 2px solid white;
+#titulo_portifolio::before{
+    content: '/';
+}
+/*--rodape--*/
+#rodape{
+    margin-top: 20px;
+}
+#rodape .list-inline-item a{
+    color:black;
+    text-decoration: none;
+}
+
+#rodape .list-inline-item:before{
+    content: '[';
+}
+#rodape .list-inline-item:hover:before{
+    padding: 10px;
+}
+#rodape .list-inline-item:after{
+    content: ']';
+}
+#rodape .list-inline-item:hover:after{
+    padding: 10px;
 }
