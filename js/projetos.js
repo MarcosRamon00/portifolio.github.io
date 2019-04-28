@@ -1,19 +1,11 @@
 var area_projetos = document.getElementById("area_projetos");
 
-<<<<<<< HEAD
-
-=======
->>>>>>> dev
 var request = new XMLHttpRequest();
 request.open('GET','./json/projetos.json');
 request.onload = function(){
     var data = JSON.parse(request.responseText);
-<<<<<<< HEAD
      renderTodosProjetos(data);
     
-=======
-    renderTodosProjetos(data);        
->>>>>>> dev
 };
 request.send();
     
