@@ -1,16 +1,12 @@
 var area_projetos = document.getElementById("area_projetos");
 
-
-    var request = new XMLHttpRequest();
-    request.open('GET','./json/projetos.json');
-    request.onload = function(){
-        var data = JSON.parse(request.responseText);
-        if(isBtnProjetosAtivo){
-            renderTodosProjetos(data);
-            isBtnProjetosAtivo = false;
-        }
-    };
-    request.send();
+var request = new XMLHttpRequest();
+request.open('GET','./json/projetos.json');
+request.onload = function(){
+    var data = JSON.parse(request.responseText);
+    renderTodosProjetos(data);        
+};
+request.send();
     
 
 function renderTodosProjetos(data){
