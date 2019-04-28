@@ -1,24 +1,25 @@
-var animalContainer = document.getElementById("projetos");
-var btn = document.getElementById("btn");
-var countProjetos = 0;
+var area_projetos = document.getElementById("area_projetos");
+var btn_projetos = document.getElementById("btn_projetos");
+var isBtnProjetosAtivo = true;
 
-btn.addEventListener("click",function(){
+btn_projetos.addEventListener("click",function(){
     var request = new XMLHttpRequest();
     request.open('GET','./json/data.json');
     request.onload = function(){
         var data = JSON.parse(request.responseText);
-        renderHTML(data);
-    };
-    request.onerror = function(){
-        document.write("error");
+        if(isBtnProjetosAtivo){
+            renderTodosProjetos(data);
+            isBtnProjetosAtivo = false;
+        }
     };
     request.send();
+    
 });
 
-function renderHTML(data){
-    var htmlString = "";
+function renderTodosProjetos(data){
+    var bloco_projeto = "";
     for (i = 0;i < data.length; i++){
-        htmlString += "<div class='col-sm-12 col-md-4 bloco_projeto'>" +
+        bloco_projeto += "<div class='col-sm-12 col-md-4 bloco_projeto'>" +
         "<h3 class='text-center'>" + data[i].nome + "</h3>" +
         "<img src='" + data[i].imagem +"' class='img-fluid'>" +
         "<h4>Descrição</h4>" + 
@@ -29,5 +30,5 @@ function renderHTML(data){
         "</div>" +   
          "</div>";
     }
-    animalContainer.insertAdjacentHTML('beforeend',htmlString);
+    area_projetos.insertAdjacentHTML('beforeend',bloco_projeto);
 }
