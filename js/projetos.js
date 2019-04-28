@@ -4,7 +4,7 @@ var isBtnProjetosAtivo = true;
 
 btn_projetos.addEventListener("click",function(){
     var request = new XMLHttpRequest();
-    request.open('GET','./json/data.json');
+    request.open('GET','./json/projetos.json');
     request.onload = function(){
         var data = JSON.parse(request.responseText);
         if(isBtnProjetosAtivo){

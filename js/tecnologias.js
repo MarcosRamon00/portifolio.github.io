@@ -17,18 +17,19 @@ btn_tecnologias.addEventListener("click",function(){
 });
 
 function renderTodasTecnologias(data){
-    var bloco_tecnologia = "";
-    for (i = 0;i < data.length; i++){
-        bloco_projeto += "<div class='col-sm-12 col-md-4 bloco_projeto'>" +
-        "<h3 class='text-center'>" + data[i].nome + "</h3>" +
-        "<img src='" + data[i].imagem +"' class='img-fluid'>" +
+    var bloco_tecnologia = '';
+    for (i = 0;i < bloco_tecnologia.length;i++){
+        bloco_tecnologia += "<div class='col-sm-12 col-md-4'>" +
+        "<h3 class='text-center'>" + data['tecnologias'][i] + "</h3>" +
+        "<img src='" + data['tecnologias'][i] +"' class='img-fluid'>" +
         "<h4>Descrição</h4>" + 
-        "<p>" + data[i].descricao + "</p>" +
+        "<p>" + data['tecnologias'][i] + "</p>" +
         "<div class='btn-group btn-block'>" +
-            "<a href='" + data[i].link + "' class='btn btn-primary '>ver projeto</a>" +
-            "<a href='" + data[i].codigoFonte + "' class='btn btn-primary '>código fonte</a>" +
+            "<a href='" + data['tecnologias'][i] + "' class='btn btn-primary '>ver projeto</a>" +
+            "<a href='" + data['tecnologias'][i] + "' class='btn btn-primary '>código fonte</a>" +
         "</div>" +   
          "</div>";
     }
+    console.log(data['tecnologias']);
     area_tecnologias.insertAdjacentHTML('beforeend',bloco_tecnologia);
 }
