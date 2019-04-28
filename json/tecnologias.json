@@ -1,5 +1,12 @@
-{
-    "tecnologias":["MySQL"],
-    "frameworks":["bootstrap"],
-    "bibliotecas":["jQuery"]
-}
+[
+    {
+        "nome":"MySQL"
+    },
+    {
+        "nome":"Bootstrap"
+    },
+    {
+        "nome":"jQuery"
+    }
+
+]

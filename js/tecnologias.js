@@ -17,17 +17,11 @@ btn_tecnologias.addEventListener("click",function(){
 });
 
 function renderTodasTecnologias(data){
-    var bloco_tecnologia = '';
-    for (i = 0;i < bloco_tecnologia.length;i++){
-        bloco_tecnologia += "<div class='col-sm-12 col-md-4'>" +
-        "<h3 class='text-center'>" + data['tecnologias'][i] + "</h3>" +
-        "<img src='" + data['tecnologias'][i] +"' class='img-fluid'>" +
-        "<h4>Descrição</h4>" + 
-        "<p>" + data['tecnologias'][i] + "</p>" +
-        "<div class='btn-group btn-block'>" +
-            "<a href='" + data['tecnologias'][i] + "' class='btn btn-primary '>ver projeto</a>" +
-            "<a href='" + data['tecnologias'][i] + "' class='btn btn-primary '>código fonte</a>" +
-        "</div>" +   
+    var bloco_tecnologia = "";
+    for (i = 0;i < data.length;i++){
+        bloco_tecnologia += "<div class='col-sm-12 col-md-2 bloco_tecnologia'>" +
+        "<img src='" + data[i].imagem +"'>" +  
+        "<h3 class='text-center'>" + data[i].nome + "</h3>" + 
          "</div>";
     }
     console.log(data['tecnologias']);
