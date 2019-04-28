@@ -1,8 +1,6 @@
 var area_projetos = document.getElementById("area_projetos");
-var btn_projetos = document.getElementById("btn_projetos");
-var isBtnProjetosAtivo = true;
 
-btn_projetos.addEventListener("click",function(){
+
     var request = new XMLHttpRequest();
     request.open('GET','./json/projetos.json');
     request.onload = function(){
@@ -14,7 +12,6 @@ btn_projetos.addEventListener("click",function(){
     };
     request.send();
     
-});
 
 function renderTodosProjetos(data){
     var bloco_projeto = "";

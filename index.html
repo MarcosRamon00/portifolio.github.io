@@ -6,39 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portifolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css"></link>
 </head>
 <body>
+    <section class="container-fluid">
+        <h1 id="titulo" class="text-center">Hello world_/Portifólio</h1>
+    </section>
     <section class="container">
-        <h1 class="text-left">Hello world!</h1>
+        <div id="contato" class="col-sm-12">
+            <ul class="list-inline text-right">
+                <li class="list-inline-item"><a href="">E-mail</a></li>
+                <li class="list-inline-item"><a href="">Github</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="container">
         <div class="row">
             <div class="col-sm-12 col-md-8">
                 <p class="text-justify">
-                    Me chamo __ e sei front-end e back-end. Conheço essas <span id="btn_tecnologias" class="border-bottom border-success" data-toggle="tooltip" title="frameworks, bibliotecas e outros.">tecnologias</span> e esses são meus <span id="btn_projetos" class="border-bottom border-success">projetos</span>.
+                    Olá me chamo ___ sou um programador web ,sei 
                 </p>
-            </div>
-            <div id="redes_sociais" class="col-sm-12 col-md-4">
-                <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item"><a href="">E-mail</a></li>
-                    <li class="list-group-item"><a href="">Github</a></li>
-                </ul>
             </div>
         </div>
     </section>
     <section class="container">
-        <div id="area_tecnologias" class="row"></div>
         <div id="area_projetos" class="row"></div>
     </section>
-    <!--script para tooltip do bootstrap-->
-    <script>
-        $(function (){
-            $('[data-toggle="tooltip"]').tooltip()
-        });
-    </script>
     <script src="js/projetos.js"></script>
-    <script src="js/tecnologias.js"></script>
 </body>
 </html>
