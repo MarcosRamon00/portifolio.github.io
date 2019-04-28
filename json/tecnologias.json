@@ -1,12 +1,15 @@
 [
     {
-        "nome":"MySQL"
+        "nome":"MySQL",
+        "imagem":"../assets/imagens/imagem.png"
     },
     {
-        "nome":"Bootstrap"
+        "nome":"Bootstrap 4",
+        "imagem":"../assets/imagens/imagem.png"
     },
     {
-        "nome":"jQuery"
+        "nome":"jQuery",
+        "imagem":"../assets/imagens/imagem.png"
     }
 
 ]
