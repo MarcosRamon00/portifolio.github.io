@@ -1,6 +1,18 @@
-.bloco_projeto{
-    padding: 10px;
+body{
+    text-decoration: none;
 }
-.bloco_tecnologia{
-    padding: 10px;
+#bloco_texto_sobre{
+    margin:50px;
+}
+.bloco_projeto{
+    padding: 20px;
+}
+#rodape{
+    margin-top:10px;
+    padding:40px;
+    background-color: black;
+    color:whitesmoke;
+}
+#rodape div ul li a:hover{
+    border-bottom: 2px solid white;
 }
