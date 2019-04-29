@@ -26,7 +26,7 @@ function renderizarHTMLProjetos(data){
 
 function addDivBotoes(data){//add div para os botoes
     var div_botoes = "";
-    div_botoes += "<div class='btn-group btn-block'>";
+    div_botoes += "<div id='botoes' class='btn-group btn-block'>";
     //caso projeto possua link para o projeto
     if(data[i].link != "" && data[i].link != null && data[i].link != 0){
         div_botoes += addBotaoLink(data);
