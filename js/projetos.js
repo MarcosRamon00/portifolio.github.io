@@ -28,11 +28,11 @@ function addBotoes(data){//add div para os botoes
     var div_botoes = "";
     div_botoes += "<div class='btn-group btn-block'>";
     //caso projeto possua link para o projeto
-    if(data[i].link != '' || data[i].link != null || data[i].link != 0){
+    if(data[i].link != "" && data[i].link != null && data[i].link != 0){
         div_botoes += addBotaoLink(data);
     }
     //caso projeto possua link para o codigo fonte
-    if(data[i].codigoFonte != '' || data[i].codigoFonte != null || data[i].codigoFonte != 0){
+    if(data[i].codigoFonte != "" && data[i].codigoFonte != null && data[i].codigoFonte != 0){
         div_botoes += addBotaoCodigoFonte(data);
     }
     div_botoes += "</div>";
@@ -40,7 +40,7 @@ function addBotoes(data){//add div para os botoes
 }
 
 function addBotaoLink(data){//adiciona botao para link do projeto
-    return "<a href='" + data[i].codigoFonte +"' alt='" + data[i].alt_codigoFonte + "' class='btn btn-secondary '>código fonte</a>";
+    return "<a href='" + data[i].link +"' alt='" + data[i].alt_link + "' class='btn btn-secondary '>ver projeto</a>";
 }
 
 function addBotaoCodigoFonte(data){//adiciona botao para link do codigo fonte
