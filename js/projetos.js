@@ -18,13 +18,13 @@ function renderizarHTMLProjetos(data){
         bloco_projeto += "<img src='" + data[i].imagem +"' class='img-fluid'>";
         bloco_projeto += "<h4>Descrição</h4>"; 
         bloco_projeto += "<p>" + data[i].descricao + "</p>";
-        bloco_projeto += addBotoes(data);//add div botoes   
+        bloco_projeto += addDivBotoes(data);//add div botoes   
         bloco_projeto += "</div>";
     }
     area_projetos.insertAdjacentHTML('beforeend',bloco_projeto);
 }
 
-function addBotoes(data){//add div para os botoes
+function addDivBotoes(data){//add div para os botoes
     var div_botoes = "";
     div_botoes += "<div class='btn-group btn-block'>";
     //caso projeto possua link para o projeto
