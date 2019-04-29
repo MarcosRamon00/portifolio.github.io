@@ -23,8 +23,8 @@
         "descricao":"uma breve descricao de  um site legal. 3",
         "link":"https://www.google.com",
         "alt_link":"link para o projeto",
-        "codigoFonte":"https://www.google.com.br",
-        "alt_codigoFonte":"link para o codigo fonte"
+        "codigoFonte":null,
+        "alt_codigoFonte":null
     },
     {
         "nome":"site legal 4",
