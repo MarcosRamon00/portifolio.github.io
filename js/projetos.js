@@ -4,7 +4,8 @@ var request = new XMLHttpRequest();
 request.open('GET','./json/projetos.json');
 request.onload = function(){
     var data = JSON.parse(request.responseText);
-    renderTodosProjetos(data);        
+     renderTodosProjetos(data);
+    
 };
 request.send();
     

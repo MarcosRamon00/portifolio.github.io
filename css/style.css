@@ -1,3 +1,4 @@
+
 #contato .list-inline .list-inline-item a{
     color: black;
     text-decoration: none;
@@ -23,11 +24,9 @@
 #titulo_portifolio::before{
     content: '/';
 }
-.bloco_projeto{
-    padding: 20px;
-}
 /*--rodape--*/
 #rodape{
+    bottom:0;
     margin-top: 20px;
 }
 #rodape .list-inline-item a{
@@ -47,4 +46,3 @@
 #rodape .list-inline-item:hover:after{
     padding: 10px;
 }
-
