@@ -21,7 +21,7 @@
         "nome":"site legal 3",
         "imagem":"assets/imagens/imagem.png",
         "descricao":"uma breve descricao de  um site legal. 3",
-        "link":"https://www.google.com",
+        "link":null,
         "alt_link":"link para o projeto",
         "codigoFonte":"https://www.google.com.br",
         "alt_codigoFonte":"link para o codigo fonte"
