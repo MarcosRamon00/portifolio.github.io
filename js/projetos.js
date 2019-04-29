@@ -5,8 +5,7 @@ var request = new XMLHttpRequest();
 request.open('GET','./json/projetos.json');
 request.onload = function(){
     var data = JSON.parse(request.responseText);
-     renderizarHTMLProjetos(data);
-    
+     renderizarHTMLProjetos(data);    
 };
 request.send();
     
@@ -19,30 +18,25 @@ function renderizarHTMLProjetos(data){
         bloco_projeto += "<img src='" + data[i].imagem +"' class='img-fluid'>";
         bloco_projeto += "<h4>Descrição</h4>"; 
         bloco_projeto += "<p>" + data[i].descricao + "</p>";
-        bloco_projeto += "<div class='btn-group btn-block'>";
-            //caso projeto nao possua link para o projeto
-                if(data[i].link != '' || data[i].link == null || data[i].link == 0){
-                    bloco_projeto +=  "<a href='" + data[i].link + "' alt='" + data[i].alt_link + "' class='btn btn-secondary '>ver projeto</a>";
-                }
-            //caso projeto nao possua link para o codigo fonte
-                if(data[i].codigoFonte != '' || data[i].codigoFonte == null || data[i].codigoFonte == 0){
-                    bloco_projeto += "<a href='" + data[i].codigoFonte +"' alt='" + data[i].alt_codigoFonte + "' class='btn btn-secondary '>código fonte</a>";
-                }
-             bloco_projeto += "</div>";   
-         bloco_projeto += "</div>";
+        bloco_projeto += addBotoes(data);//add div botoes   
+        bloco_projeto += "</div>";
     }
     area_projetos.insertAdjacentHTML('beforeend',bloco_projeto);
 }
 
-function addBotoes(data){
+function addBotoes(data){//add div para os botoes
+    var div_botoes = "";
+    div_botoes += "<div class='btn-group btn-block'>";
     //caso projeto possua link para o projeto
     if(data[i].link != '' || data[i].link != null || data[i].link != 0){
-        bloco_projeto = addBotaoLink(data);
+        div_botoes += addBotaoLink(data);
     }
     //caso projeto possua link para o codigo fonte
     if(data[i].codigoFonte != '' || data[i].codigoFonte != null || data[i].codigoFonte != 0){
-        bloco_projeto += addBotaoCodigoFonte(data);
+        div_botoes += addBotaoCodigoFonte(data);
     }
+    div_botoes += "</div>";
+    return div_botoes;
 }
 
 function addBotaoLink(data){//adiciona botao para link do projeto
