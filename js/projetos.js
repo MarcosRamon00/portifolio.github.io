@@ -1,3 +1,4 @@
+//ajax execitado automaticamente com o carregar da pagina
 var area_projetos = document.getElementById("area_projetos");
 
 var request = new XMLHttpRequest();
@@ -31,4 +32,23 @@ function renderizarHTMLProjetos(data){
          bloco_projeto += "</div>";
     }
     area_projetos.insertAdjacentHTML('beforeend',bloco_projeto);
+}
+
+function addBotoes(data){
+    //caso projeto possua link para o projeto
+    if(data[i].link != '' || data[i].link != null || data[i].link != 0){
+        bloco_projeto = addBotaoLink(data);
+    }
+    //caso projeto possua link para o codigo fonte
+    if(data[i].codigoFonte != '' || data[i].codigoFonte != null || data[i].codigoFonte != 0){
+        bloco_projeto += addBotaoCodigoFonte(data);
+    }
+}
+
+function addBotaoLink(data){//adiciona botao para link do projeto
+    return "<a href='" + data[i].codigoFonte +"' alt='" + data[i].alt_codigoFonte + "' class='btn btn-secondary '>código fonte</a>";
+}
+
+function addBotaoCodigoFonte(data){//adiciona botao para link do codigo fonte
+    return "<a href='" + data[i].codigoFonte +"' alt='" + data[i].alt_codigoFonte + "' class='btn btn-secondary '>código fonte</a>";
 }
