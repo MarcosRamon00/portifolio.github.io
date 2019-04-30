@@ -1,6 +1,6 @@
-//ajax executado automaticamente com o carregar da pagina
 var area_projetos = document.getElementById("area_projetos");
 
+//ajax executado automaticamente com o carregar da pagina
 var request = new XMLHttpRequest();
 request.open('GET','./json/projetos.json');
 request.onload = function(){
