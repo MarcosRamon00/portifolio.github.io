@@ -8,9 +8,11 @@ request.onload = function(){
     var dados = JSON.parse(request.responseText);
     renderizarHTMLProjetos(dados);
   }else if(this.status == 404){
-
+    renderizarHTMLErroNotFound();
   }
-        
+  request.onerror = function(){
+    renderizarHTMLErro();
+  }      
 };
 request.send();
 
@@ -53,4 +55,22 @@ function addBotaoLink(dados){
 //adiciona botao para link do codigo fonte
 function addBotaoCodigoFonte(data){
   return "<a href='" + data[i].codigoFonte +"' alt='" + data[i].alt_codigoFonte + "' class='btn btn-secondary '>código fonte</a>";
+}
+
+//rederizar aviso de erro not found(404)
+function renderizarHTMLErroNotFound(){
+  var div_projeto = "";
+  div_projeto += "<div id='div_alerta_erro' class='container'>";
+  div_projeto += "<h2 class='text-center alert alert-danger'>Dados não encontrados, tente novamente mais tarde.</h2>";
+  div_projeto += "</div>"; 
+  area_projetos.insertAdjacentHTML('beforeend',div_projeto);
+}
+
+//renderizar aviso de erro
+function renderizarHTMLErro(){
+  var div_projeto = "";
+  div_projeto += "<div id='div_alerta_erro' class='container'>";
+  div_projeto += "<h2 class='text-center alert alert-danger'>Houve algum erro, tente novamente mais tarde.</h2>";
+  div_projeto += "</div>";
+  area_projetos.insertAdjacentHTML('beforeend',div_projeto); 
 }
