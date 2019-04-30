@@ -24,6 +24,11 @@
 #titulo_portifolio::before{
     content: '/';
 }
+/*descricao projeto*/
+#descricao_projeto{
+    padding-left: 10px;
+    padding-right: 10px;
+}
 /*--rodape--*/
 #rodape{
     bottom:0;

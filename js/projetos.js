@@ -17,7 +17,7 @@ function renderizarHTMLProjetos(dados){
         div_projeto += "<h3 class='text-center'>" + dados[i].nome + "</h3>";
         div_projeto += "<img src='" + dados[i].imagem +"' class='img-fluid'>";
         div_projeto += "<h4>Descrição</h4>"; 
-        div_projeto += "<p>" + dados[i].descricao + "</p>";
+        div_projeto += "<p id='descricao_projeto' class='text-justify'>" + dados[i].descricao + "</p>";
         div_projeto += addDivBotoes(dados);//add div botoes   
         div_projeto += "</div>";
     }
