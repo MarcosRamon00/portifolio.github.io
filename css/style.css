@@ -51,3 +51,9 @@
 #rodape .list-inline-item:hover:after{
     padding: 10px;
 }
+
+/*--alertas de erro--*/
+#div_alerta_erro{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
