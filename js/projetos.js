@@ -40,7 +40,7 @@ function addDivBotoes(data){
     return div_botoes;
 }
 
-////adiciona botao para link do projeto
+//adiciona botao para link do projeto
 function addBotaoLink(data){
     return "<a href='" + data[i].link +"' alt='" + data[i].alt_link + "' class='btn btn-secondary '>ver projeto</a>";
 }
