@@ -4,8 +4,11 @@ var area_projetos = document.getElementById("area_projetos");
 var request = new XMLHttpRequest();
 request.open('GET','./json/projetos.json');
 request.onload = function(){
-    var dados = JSON.parse(request.responseText);
-     renderizarHTMLProjetos(dados);    
+    if(this.status == 200){
+        var dados = JSON.parse(request.responseText);
+        renderizarHTMLProjetos(dados);
+    }
+        
 };
 request.send();
 
