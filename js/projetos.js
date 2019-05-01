@@ -18,7 +18,7 @@ request.send();
 
 //funcao para montar html de projetos
 function renderDivProjects(data){
-  var div_project = "";
+  let div_project = "";
   for (i = 0;i < data.length; i++){
     div_project += "<div class='col-sm-12 col-md-4 bloco_projeto'>";
     div_project += "<h3 class='text-center'>" + data[i].nome + "</h3>";
@@ -33,7 +33,7 @@ function renderDivProjects(data){
 
 //add div para os botoes
 function addDivButtons(data){
-  var div_buttons = "";
+  let div_buttons = "";
   div_buttons += "<div id='botoes' class='btn-group btn-block'>";
   //caso projeto possua link para o projeto
   if(data[i].link.projeto != "" && data[i].link.projeto != null && data[i].link.projeto != 0){
@@ -59,7 +59,7 @@ function addButtonSourceCode(data){
 
 //rederizar aviso de erro not found(404)
 function renderDivErrorNotFound(){
-  var div_project = "";
+  let div_project = "";
   div_project += "<div id='div_alerta_erro' class='container'>";
   div_project += "<h2 class='text-center alert alert-danger'>Dados não encontrados, tente novamente mais tarde.</h2>";
   div_project += "</div>"; 
@@ -68,7 +68,7 @@ function renderDivErrorNotFound(){
 
 //renderizar aviso de erro
 function renderDivError(){
-  var div_project = "";
+  let div_project = "";
   div_project += "<div id='div_alerta_erro' class='container'>";
   div_project += "<h2 class='text-center alert alert-danger'>Houve algum erro, tente novamente mais tarde.</h2>";
   div_project += "</div>";
