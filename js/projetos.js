@@ -57,7 +57,7 @@ function addButtonSourceCode(data){
   return "<a href='" + data[i].link.codigoFonte +"' alt='" + data[i].link.alt_codigoFonte + "' class='btn btn-secondary '>código fonte</a>";
 }
 
-//rederizar aviso de erro not found(404)
+//renderizar aviso de erro not found(404)
 function renderDivErrorNotFound(){
   let div_project = "";
   div_project += "<div id='div_alerta_erro' class='container'>";
