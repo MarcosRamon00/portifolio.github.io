@@ -3,36 +3,44 @@
         "nome":"site legal 1",
         "imagem":"assets/imagens/imagem.png",
         "descricao":"uma breve descricao de um site legal. 1",
-        "link":"https://www.google.com",
-        "alt_link":"link para o projeto",
-        "codigoFonte":"https://www.google.com.br",
-        "alt_codigoFonte":"link para o codigo fonte"
+        "links":{
+            "projeto":"https://www.google.com",
+            "alt_projeto":"link para o projeto",
+            "codigoFonte":"https://www.google.com.br",
+            "alt_codigoFonte":"link para o codigo fonte"
+        }
     },
     {
         "nome":"site legal 2",
         "imagem":"assets/imagens/imagem.png",
         "descricao":"uma breve descricao de um site legal. 2",
-        "link":"https://www.google.com",
-        "alt_link":"link para o projeto",
-        "codigoFonte":"https://www.google.com.br",
-        "alt_codigoFonte":"link para o codigo fonte"
+        "links":{
+            "projeto":"https://www.google.com",
+            "alt_projeto":"link para o projeto",
+            "codigoFonte":"https://www.google.com.br",
+            "alt_codigoFonte":"link para o codigo fonte"
+        }
     },
     {
         "nome":"site legal 3",
         "imagem":"assets/imagens/imagem.png",
         "descricao":"uma breve descricao de  um site legal. 3",
-        "link":"https://www.google.com",
-        "alt_link":"link para o projeto",
-        "codigoFonte":null,
-        "alt_codigoFonte":null
+        "links":{
+            "projeto":"https://www.google.com",
+            "alt_projeto":"link para o projeto",
+            "codigoFonte":null,
+            "alt_codigoFonte":null
+        }
     },
     {
         "nome":"site legal 4",
         "imagem":"assets/imagens/imagem.png",
         "descricao":"uma breve descricao de  um site legal. 4",
-        "link":"",
-        "alt_link":null,
-        "codigoFonte":"https://www.google.com.br",
-        "alt_codigoFonte":"link para o codigo fonte"
+        "links":{
+            "projeto":"",
+            "alt_projeto":null,
+            "codigoFonte":"https://www.google.com.br",
+            "alt_codigoFonte":"link para o codigo fonte"
+        }
     }
 ]
