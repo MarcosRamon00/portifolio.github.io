@@ -36,11 +36,11 @@ function addDivButtons(data){
   var div_buttons = "";
   div_buttons += "<div id='botoes' class='btn-group btn-block'>";
   //caso projeto possua link para o projeto
-  if(data[i].link != "" && data[i].link != null && data[i].link != 0){
+  if(data[i].link.projeto != "" && data[i].link.projeto != null && data[i].link.projeto != 0){
     div_buttons += addButtonLink(data);
   }
   //caso projeto possua link para o codigo fonte
-  if(data[i].codigoFonte != "" && data[i].codigoFonte != null && data[i].codigoFonte != 0){
+  if(data[i].link.codigoFonte != "" && data[i].link.codigoFonte != null && data[i].link.codigoFonte != 0){
     div_buttons += addButtonSourceCode(data);
   }
   div_buttons += "</div>";
@@ -49,12 +49,12 @@ function addDivButtons(data){
 
 //adiciona botao para link do projeto
 function addButtonLink(data){
-  return "<a href='" + data[i].link +"' alt='" + data[i].alt_link + "' class='btn btn-secondary '>ver projeto</a>";
+  return "<a href='" + data[i].link.projeto +"' alt='" + data[i].link.alt_projeto + "' class='btn btn-secondary '>ver projeto</a>";
 }
 
 //adiciona botao para link do codigo fonte
 function addButtonSourceCode(data){
-  return "<a href='" + data[i].codigoFonte +"' alt='" + data[i].alt_codigoFonte + "' class='btn btn-secondary '>código fonte</a>";
+  return "<a href='" + data[i].link.codigoFonte +"' alt='" + data[i].link.alt_codigoFonte + "' class='btn btn-secondary '>código fonte</a>";
 }
 
 //rederizar aviso de erro not found(404)

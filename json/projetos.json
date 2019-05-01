@@ -3,7 +3,7 @@
         "nome":"site legal 1",
         "imagem":"assets/imagens/imagem.png",
         "descricao":"uma breve descricao de um site legal. 1",
-        "links":{
+        "link":{
             "projeto":"https://www.google.com",
             "alt_projeto":"link para o projeto",
             "codigoFonte":"https://www.google.com.br",
@@ -14,7 +14,7 @@
         "nome":"site legal 2",
         "imagem":"assets/imagens/imagem.png",
         "descricao":"uma breve descricao de um site legal. 2",
-        "links":{
+        "link":{
             "projeto":"https://www.google.com",
             "alt_projeto":"link para o projeto",
             "codigoFonte":"https://www.google.com.br",
@@ -25,7 +25,7 @@
         "nome":"site legal 3",
         "imagem":"assets/imagens/imagem.png",
         "descricao":"uma breve descricao de  um site legal. 3",
-        "links":{
+        "link":{
             "projeto":"https://www.google.com",
             "alt_projeto":"link para o projeto",
             "codigoFonte":null,
@@ -36,7 +36,7 @@
         "nome":"site legal 4",
         "imagem":"assets/imagens/imagem.png",
         "descricao":"uma breve descricao de  um site legal. 4",
-        "links":{
+        "link":{
             "projeto":"",
             "alt_projeto":null,
             "codigoFonte":"https://www.google.com.br",
