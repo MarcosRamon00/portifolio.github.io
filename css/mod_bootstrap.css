@@ -1,0 +1,12 @@
+.btn{
+    margin-top: 5px;
+}
+.btn-custom{
+    color:black;
+    background-color:white;
+    border-radius: 0%;
+}
+.btn-custom:hover{
+    color:white;
+    background-color: orange;
+}

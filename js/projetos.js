@@ -21,11 +21,13 @@ function renderDivProjects(data){
   let div_project = "";
   for (i = 0;i < data.length; i++){
     div_project += "<div class='col-sm-12 col-md-4 bloco_projeto'>";
-    div_project += "<h3 class='text-center'>" + data[i].nome + "</h3>";
-    div_project += "<img src='" + data[i].imagem +"' class='img-fluid'>";
-    div_project += "<h4>Descrição</h4>"; 
-    div_project += "<p id='descricao_projeto' class='text-justify'>" + data[i].descricao + "</p>";
-    div_project += addDivButtons(data);//add div botoes   
+    div_project += "<h3 class='text-center titulo_projeto_nome'>" + data[i].nome + "</h3>";
+    div_project += "<img src='" + data[i].imagem +"' class='img-fluid imagem_projeto'>";
+    div_project += "<div class='bloco_texto'>";
+    div_project += "<h4 class='titulo_descricao_projeto'>Descrição</h4>"; 
+    div_project += "<p class='text-justify descricao_projeto'>" + data[i].descricao + "</p>";
+    div_project += "</div>";
+    div_project += addDivButtons(data);//add div botoes
     div_project += "</div>";
   }
   section_projects.insertAdjacentHTML('beforeend',div_project);
@@ -34,7 +36,7 @@ function renderDivProjects(data){
 //add div para os botoes
 function addDivButtons(data){
   let div_buttons = "";
-  div_buttons += "<div id='botoes' class='btn-group btn-block'>";
+  div_buttons += "<div class='btn-group btn-block'>";
   //caso projeto possua link para o projeto
   if(data[i].link.projeto != "" && data[i].link.projeto != null && data[i].link.projeto != 0){
     div_buttons += addButtonLink(data);
@@ -49,12 +51,12 @@ function addDivButtons(data){
 
 //adiciona botao para link do projeto
 function addButtonLink(data){
-  return "<a href='" + data[i].link.projeto +"' alt='" + data[i].link.alt_projeto + "' class='btn btn-secondary '>ver projeto</a>";
+  return "<a href='" + data[i].link.projeto +"' alt='" + data[i].link.alt_projeto + "' class='btn btn-custom '>ver projeto</a>";
 }
 
 //adiciona botao para link do codigo fonte
 function addButtonSourceCode(data){
-  return "<a href='" + data[i].link.codigoFonte +"' alt='" + data[i].link.alt_codigoFonte + "' class='btn btn-secondary '>código fonte</a>";
+  return "<a href='" + data[i].link.codigoFonte +"' alt='" + data[i].link.alt_codigoFonte + "' class='btn btn-custom '>código fonte</a>";
 }
 
 //renderizar aviso de erro not found(404)
