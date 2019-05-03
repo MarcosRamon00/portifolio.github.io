@@ -30,7 +30,8 @@ body{/*cor do fundo*/
 }
 .bloco_texto{
     color:black;
-    background-color:#d7d7d7;
+    /*background-color:#d7d7d7;*/
+    background-color: white;
     padding: 0px; 
     border: 4px solid white;
 }
@@ -45,15 +46,19 @@ body{/*cor do fundo*/
 }
 
 /*contatos*/
-.div_contato .list-inline-item{
-    background-color:orange;
-    padding: 1px 15px 1px 15px; 
-}
 .div_contato .list-inline-item a{
     color:white;
     text-decoration: none;
+    background-color:orange;
+    padding: 1px 15px 1px 15px;
 }
 
+.div_contato .list-inline-item a:hover{
+    color:black;
+    background-color: white;
+    text-decoration: none;
+    padding: 1px 15px 1px 15px; 
+}
 /*--alertas de erro--*/
 #div_alerta_erro{
     margin-top: 20px;
