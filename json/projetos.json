@@ -1,7 +1,7 @@
 [
     {
         "nome":"site legal 1",
-        "imagem":"assets/imagens/imagem.png",
+        "imagem":"assets/imagens/abacaxi.png",
         "descricao":"uma breve descricao de um site legal. 1",
         "link":{
             "projeto":"https://www.google.com",
@@ -12,7 +12,7 @@
     },
     {
         "nome":"site legal 2",
-        "imagem":"assets/imagens/imagem.png",
+        "imagem":"assets/imagens/abacaxi.png",
         "descricao":"uma breve descricao de um site legal. 2",
         "link":{
             "projeto":"https://www.google.com",
@@ -23,7 +23,7 @@
     },
     {
         "nome":"site legal 3",
-        "imagem":"assets/imagens/imagem.png",
+        "imagem":"assets/imagens/abacaxi.png",
         "descricao":"uma breve descricao de  um site legal. 3",
         "link":{
             "projeto":"https://www.google.com",
@@ -34,7 +34,7 @@
     },
     {
         "nome":"site legal 4",
-        "imagem":"assets/imagens/imagem.png",
+        "imagem":"assets/imagens/abacaxi.png",
         "descricao":"uma breve descricao de  um site legal. 4",
         "link":{
             "projeto":"",
