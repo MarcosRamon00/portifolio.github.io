@@ -50,7 +50,7 @@ function addDivTeam(data){
 function addLinksMembers(data){
   let linksMembros = "";
   for (indexLink = 0;indexLink < data[i].equipe.membro.length; indexLink++){
-    linksMembros += "<a class='membro_equipe_projeto badge badge-pill badge-custom' href='" + data[i].equipe.contato_membro[indexLink] + "'>" + data[i].equipe.membro[indexLink] + "</a>";
+    linksMembros += "<span class='membro_equipe_projeto'><a class='badge badge-pill badge-custom' href='" + data[i].equipe.contato_membro[indexLink] + "'>" + data[i].equipe.membro[indexLink] + "</a></span>";
   }
   return linksMembros; 
 }
