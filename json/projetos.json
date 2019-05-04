@@ -1,13 +1,17 @@
 [
     {
-        "nome":"site legal 1",
+        "nome":"portifolio",
         "imagem":"assets/imagens/abacaxi.png",
-        "descricao":"uma breve descricao de um site legal. 1",
+        "descricao":"portifolio no github",
         "link":{
-            "projeto":"https://www.google.com",
-            "alt_projeto":"link para o projeto",
-            "codigoFonte":"https://www.google.com.br",
-            "alt_codigoFonte":"link para o codigo fonte"
+            "projeto":"https://matheushttp.github.io/portifolio.github.io/",
+            "alt_projeto":"link para o projeto do portifolio no github.s",
+            "codigoFonte":"https://github.com/MatheusHTTP/portifolio.github.io",
+            "alt_codigoFonte":"link para o codigo fonte do portifolio no github."
+        },
+        "equipe":{
+            "membros":["MatheusHTTP","MarcosRamon00"],
+            "contato_membro":["https://github.com/MatheusHTTP","https://github.com/MarcosRamon00"]
         }
     },
     {
@@ -19,6 +23,10 @@
             "alt_projeto":"link para o projeto",
             "codigoFonte":"https://www.google.com.br",
             "alt_codigoFonte":"link para o codigo fonte"
+        },
+        "equipe":{
+            "membros":[],
+            "contato_membro":[]
         }
     },
     {
@@ -30,7 +38,12 @@
             "alt_projeto":"link para o projeto",
             "codigoFonte":null,
             "alt_codigoFonte":null
+        },
+        "equipe":{
+            "membros":[],
+            "contato_membro":[]
         }
+
     },
     {
         "nome":"site legal 4",
@@ -41,6 +54,10 @@
             "alt_projeto":null,
             "codigoFonte":"https://www.google.com.br",
             "alt_codigoFonte":"link para o codigo fonte"
+        },
+        "equipe":{
+            "membros":[],
+            "contato_membro":[]
         }
     }
 ]
