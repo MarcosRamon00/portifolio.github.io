@@ -27,8 +27,6 @@ body{/*cor do fundo*/
 
 #bloco_texto_sobre_portifolio{
     background-color: none;
-    border-right: 2px solid #ffb108;
-    border-bottom: 2px solid #ffb108;
 }
 #bloco_titulo_descricao_portifolio{
     background-color: none;
@@ -42,29 +40,21 @@ body{/*cor do fundo*/
     padding:10px;
     margin-bottom: 0%;
 }
-.imagem_projeto{
-    border: 4px solid #fcffff;
-}
+.imagem_projeto{}
 /*descricao projeto*/
 .titulo_descricao_projeto{
     padding-left: 10px;
 }
 .bloco_texto{
     color:black;
-    /*background-color:#d7d7d7;*/
     background-color: #fcffff;
     padding: 0px; 
-    border: 4px solid #fcffff;
 }
 .descricao_projeto{
     padding: 10px;
     margin: 0%;
 }
-#curriculo{
-    background-color:none;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-}
+
 
 /*--rodape--*/
 #rodape{
