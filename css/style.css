@@ -39,6 +39,8 @@ body{/*cor do fundo*/
     background-color:#fcffff;
     padding:10px;
     margin-bottom: 0%;
+    box-shadow: 1px 1px 3px black;
+    border-bottom:none;
 }
 .imagem_projeto{}
 /*descricao projeto*/
@@ -46,17 +48,18 @@ body{/*cor do fundo*/
     color:black;
     background-color: #fcffff;
     padding: 0px;
-    padding-left: 5px; 
+    padding-left: 5px;
+    box-shadow: 1px 1px 3px black; 
 }
 .titulo_descricao_projeto{
     padding-left: 5px;
 }
 .descricao_projeto{
     padding-left: 5px;
-    margin-bottom: 5px;
 }
 .equipe_projeto{
     padding-left: 5px;
+    margin: 5px;
 }
 .membro_equipe_projeto{
     margin-right:5px;
