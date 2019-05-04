@@ -1,11 +1,11 @@
 [
     {
-        "nome":"portifolio",
+        "nome":"Portifólio",
         "imagem":"assets/imagens/abacaxi.png",
-        "descricao":"portifolio no github",
+        "descricao":"Portifólio no github.",
         "link":{
             "projeto":"https://matheushttp.github.io/portifolio.github.io/",
-            "alt_projeto":"link para o projeto do portifolio no github.s",
+            "alt_projeto":"link para o projeto do portifólio no github.",
             "codigoFonte":"https://github.com/MatheusHTTP/portifolio.github.io",
             "alt_codigoFonte":"link para o codigo fonte do portifolio no github."
         },
