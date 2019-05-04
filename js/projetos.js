@@ -22,7 +22,7 @@ function renderDivProjects(data){
   for (i = 0;i < data.length; i++){
     div_project += "<div class='col-sm-12 col-md-4 bloco_projeto'>";
     div_project += "<h3 class='text-center titulo_projeto_nome'>" + data[i].nome + "</h3>";
-    div_project += "<img src='" + data[i].imagem +"' class='img-fluid imagem_projeto'>";
+    div_project += "<img src='" + data[i].imagem +"' class='img-fluid imagem_projeto'/>";
     div_project += "<div class='bloco_texto'>";
     div_project += "<h4 class='titulo_descricao_projeto'>Descrição</h4>"; 
     div_project += "<p class='text-justify descricao_projeto'>" + data[i].descricao + "</p>";
