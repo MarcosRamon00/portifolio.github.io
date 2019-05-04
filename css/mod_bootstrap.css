@@ -2,11 +2,11 @@
     margin-top: 5px;
 }
 .btn-custom{
-    color:black;
-    background-color:white;
+    color:#111111;
+    background-color:#fcffff;
     border-radius: 0%;
 }
 .btn-custom:hover{
-    color:white;
-    background-color: orange;
+    color:#fcffff;
+    background-color: #ffb108;
 }
