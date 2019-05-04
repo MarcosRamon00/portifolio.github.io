@@ -47,8 +47,7 @@ body{/*cor do fundo*/
 .bloco_texto{
     color:black;
     background-color: #fcffff;
-    padding: 0px;
-    padding-left: 5px;
+    padding-bottom: 5px;
     box-shadow: 1px 1px 3px black; 
 }
 .titulo_descricao_projeto{
@@ -57,12 +56,12 @@ body{/*cor do fundo*/
 .descricao_projeto{
     padding-left: 5px;
 }
-.equipe_projeto{
+.titulo_equipe_projeto{
     padding-left: 5px;
     margin: 5px;
 }
 .membro_equipe_projeto{
-    margin-right:5px;
+    margin:5px;
 }
 
 

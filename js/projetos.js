@@ -38,7 +38,7 @@ function addDivTeam(data){
   let div_equipe = "";
   if(data[i].equipe != "" && data[i].equipe != null && data[i].equipe != 0){
     div_equipe += "<div>";
-    div_equipe += "<h4 class='equipe_projeto'>Equipe</h4>";
+    div_equipe += "<h4 class='titulo_equipe_projeto'>Equipe</h4>";
     div_equipe += addLinksMembers(data);
     div_equipe += "</div>";
   }
