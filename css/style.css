@@ -1,7 +1,7 @@
 
 
 body{/*cor do fundo*/
-    background-color: #f2f2f2;
+    background-color: #fcffff;
 }
 
 
@@ -12,10 +12,12 @@ body{/*cor do fundo*/
 }
 
 #bloco_texto_sobre_portifolio{
-    background-color: #fcffff;
+    background-color: none;
+    border-right: 2px solid #ffb108;
+    border-bottom: 2px solid #ffb108;
 }
 #bloco_titulo_descricao_portifolio{
-    background-color: #fcffff;
+    background-color: none;
 }
 /*projetos*/
 .bloco_projeto{
@@ -25,10 +27,11 @@ body{/*cor do fundo*/
     background-color:#fcffff;
     padding:10px;
     margin-bottom: 0%;
+    border-top: 4px solid #ffb108;
+    border-left: 4px solid #ffb108;
 }
 .imagem_projeto{
     border: 4px solid #fcffff;
-    border-bottom-color: #fcffff;
 }
 /*descricao projeto*/
 .titulo_descricao_projeto{
@@ -46,7 +49,9 @@ body{/*cor do fundo*/
     margin: 0%;
 }
 #curriculo{
-    background-color: #fcffff;
+    background-color:none;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 /*--rodape--*/
