@@ -13,45 +13,54 @@
 <body>
     <section class="container-fluid">
         <div class="col-sm-12">
-            <h1 class="text-center">Hello_world |Portifólio</h1>
+            <h1 id="titulo" class="text-center">Hello world /Portifólio</h1>
         </div>
     </section>
     <section class="container">
-        <div class="col-sm-12">
-            <div class="div_contato">
-                <ul class="list-inline text-right">
-                    <li class="list-inline-item"><a href="">E-mail</a></li>
-                    <li class="list-inline-item"><a href="">Github</a></li>
-                </ul>
-            </div>
+        <div id="menu" class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-center ">
+                <a class="p-2" href="#portifolio">projetos</a>
+                <a class="p-2" href="#curriculo">curriculo</a>
+                <a class="p-2" href="#contato">contatos</a>
+            </nav>
         </div>
     </section>
+    <section class="container">
+        <div id="contato" class="div_contato">
+            <ul class="text-center list-inline">
+                <li class="list-inline-item "><a href="#">E-mail</a></li>
+                <li class="list-inline-item "><a href="#">Github</a></li>
+            </ul>
+        </div>
+    </section>
+   
     <section class="container">
         <div id="bloco_texto_sobre_portifolio">    
             <div class="col-sm-12">
-                <p class="text-center">
-                    Me chamo __ sou um programador web, sei front-end e back-end. Conheço Mysql, Bootstrap 4 e jquery.
+                <p class="text-left">
+                    Me chamo __ sou um desenvolvedor web, sei front-end e back-end. Conheço Mysql, Bootstrap 4 e jquery.
                 </p>
             </div>
         </div>
     </section>
     <section class="container">
         <div id="bloco_titulo_descricao_portifolio">
-            <h2 id="titulo_portifolio" class="text-center">Portifólio</h2>
-            <p class="text-center">texto sobre trabalhos no portifólio.</p>
+            <h2 id="titulo_portifolio" class="text-center">Projetos</h2>
+            <p class="text-center">Projetos desenvolvidos ao longo do meu aprendizado.</p>
         </div>
     </section>
-    <section class="container">
+    <section class="container" id="portifolio">
         <div id="area_projetos" class="row"></div>
     </section>
     <section class="area_curriculo container">
         <div id="curriculo">
-            <h2 class="text-center">curriculo</h2>
-            <p class="text-center">curriculo</p>
+            <h2 class="text-center">Currículo</h2>
+            <h3>Habilidades</h3>
+            <h3>Educação</h3>
         </div>
     </section>
     <footer id="rodape" class="container-fluid">
-        <div class="div_contato">
+        <div id="contato" class="div_contato">
              <ul class="text-center list-inline">
                 <li class="list-inline-item "><a href="#">E-mail</a></li>
                 <li class="list-inline-item "><a href="#">Github</a></li>

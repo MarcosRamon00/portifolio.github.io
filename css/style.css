@@ -3,7 +3,21 @@
 body{/*cor do fundo*/
     background-color: #fcffff;
 }
-
+/*--titulo -- */
+#titulo{
+    font-size: 2.5em;
+}
+/*--menu--*/
+#menu a{
+    text-decoration: none;
+    color: #111111;
+}
+#menu a:before{
+    content: '/';
+}
+#menu a:hover{
+    color:#ffb108;
+}
 
 /*--projetos--*/
 #titulo_portifolio{
@@ -27,8 +41,6 @@ body{/*cor do fundo*/
     background-color:#fcffff;
     padding:10px;
     margin-bottom: 0%;
-    border-top: 4px solid #ffb108;
-    border-left: 4px solid #ffb108;
 }
 .imagem_projeto{
     border: 4px solid #fcffff;
