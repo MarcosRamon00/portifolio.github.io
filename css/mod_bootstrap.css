@@ -1,3 +1,4 @@
+/*botoes do projeto*/
 .btn{
     margin-top: 5px;
     
@@ -11,4 +12,14 @@
 .btn-custom:hover{
     color:#fcffff;
     background-color: #ffb108;
+}
+
+/*equipe links*/
+.badge-custom{
+    color:#fcffff;
+    background-color: #ffb108;
+}
+.badge-custom:hover{
+    color:#ffb108;
+    background-color: #fcffff;
 }

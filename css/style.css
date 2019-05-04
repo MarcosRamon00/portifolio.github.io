@@ -42,17 +42,24 @@ body{/*cor do fundo*/
 }
 .imagem_projeto{}
 /*descricao projeto*/
-.titulo_descricao_projeto{
-    padding-left: 10px;
-}
 .bloco_texto{
     color:black;
     background-color: #fcffff;
-    padding: 0px; 
+    padding: 0px;
+    padding-left: 5px; 
+}
+.titulo_descricao_projeto{
+    padding-left: 5px;
 }
 .descricao_projeto{
-    padding: 10px;
-    margin: 0%;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+.equipe_projeto{
+    padding-left: 5px;
+}
+.membro_equipe_projeto{
+    spadding-left: 5px;
 }
 
 

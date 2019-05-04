@@ -26,11 +26,33 @@ function renderDivProjects(data){
     div_project += "<div class='bloco_texto'>";
     div_project += "<h4 class='titulo_descricao_projeto'>Descrição</h4>"; 
     div_project += "<p class='text-justify descricao_projeto'>" + data[i].descricao + "</p>";
+    div_project += addDivTeam(data);
     div_project += "</div>";
     div_project += addDivButtons(data);//add div botoes
     div_project += "</div>";
   }
   section_projects.insertAdjacentHTML('beforeend',div_project);
+}
+//add div para equipe
+function addDivTeam(data){
+  let div_equipe = "";
+  if(data[i].equipe != "" && data[i].equipe != null && data[i].equipe != 0){
+    div_equipe += "<div>";
+    div_equipe += "<h4 class='equipe_projeto'>Equipe</h4>";
+    div_equipe += addLinksMembers(data);
+    div_equipe += "</div>";
+  }
+  
+  return div_equipe;
+}
+
+//add links dos membros da equipe
+function addLinksMembers(data){
+  let linksMembros = "";
+  for (indexLink = 0;indexLink < data[i].equipe.membro.length; indexLink++){
+    linksMembros += "<a class='membro_equipe_projeto badge badge-pill badge-custom' href='" + data[i].equipe.contato_membro[indexLink] + "'>" + data[i].equipe.membro[indexLink] + "</a>";
+  }
+  return linksMembros; 
 }
 
 //add div para os botoes
