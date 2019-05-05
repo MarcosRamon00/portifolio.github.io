@@ -9,10 +9,12 @@ $(document).ready(function(){
                 area_projects.append(renderDivProjects(data));
         },
         error:function(xhr,status,errorThrown){
-            if(xhr.status == 404){
-                area_projects.append(renderDivErrorNotFound());
-            }else{
-                area_projects.append(renderDivError());
+            switch(xhr.status){
+                case 404:
+                    area_projects.append(renderDivErrorNotFound());
+                    break;
+                default:
+                    area_projects.append(renderDivError());
             }
         }
     });
