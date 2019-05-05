@@ -42,7 +42,9 @@ body{/*cor do fundo*/
     box-shadow: 1px 1px 3px black;
     border-bottom:none;
 }
-.imagem_projeto{}
+.imagem_projeto{
+    box-shadow: 1px 1px 3px black;
+}
 /*descricao projeto*/
 .bloco_texto{
     color:black;
