@@ -1,4 +1,4 @@
-var area_projects = $("#area_projetos");
+﻿var area_projects = $("#area_projetos");
 //inicio ajax
 $(document).ready(function(){
     $.ajax({
