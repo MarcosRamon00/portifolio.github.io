@@ -1,5 +1,5 @@
 # Portifólio
-    Portifólio com ajax e bootstrap 4.
+    Portifólio com jquery, ajax, json e bootstrap 4.
 
 ## Disponivel em:
 > [portifolio.github.io](https://matheushttp.github.io/portifolio.github.io/)
