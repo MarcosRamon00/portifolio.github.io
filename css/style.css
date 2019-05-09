@@ -3,6 +3,9 @@
 body{/*cor do fundo*/
     background-color: #fcffff;
 }
+i{
+    margin:5px;
+}
 /*--titulo -- */
 #titulo{
     font-size: 2.5em;
@@ -12,9 +15,7 @@ body{/*cor do fundo*/
     text-decoration: none;
     color: #111111;
 }
-#menu a:before{
-    content: '/';
-}
+
 #menu a:hover{
     color:#ffb108;
 }
