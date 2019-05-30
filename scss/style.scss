@@ -1,0 +1,74 @@
+$branco: #fcffff; 
+$preto: #111111;
+$laranja:#ffb108;
+
+body{
+    background-color: $branco;
+}
+i{
+    margin: 5px;
+}
+
+#titulo{
+    font-size: 2.5em;
+}
+
+#menu a{
+    text-decoration: none;
+    color:$preto;
+    border-bottom: 2px solid transparent;
+    margin: 2px;
+}
+#menu a:hover{
+    border-bottom-color: $laranja;
+}
+
+#titulo_portifolio{
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+#bloco_texto_sobre_portifolio{
+    background-color: none;
+    #btn_noturneMode{
+        text-decoration: none;
+        color:$preto;
+        border:1px solid $preto;
+        border-radius:10px;
+        padding:5px;
+        cursor: pointer;
+    }
+}
+#bloco_titulo_descricao_portifolio{
+    background-color: none;
+}
+
+
+//rodape
+#rodape{
+    bottom: 0;
+    margin-top: 20px;
+}
+
+//contatos
+.div_contato .list-inline-item a{
+    color: $branco;
+    text-decoration: none;
+    background-color: $laranja;
+    padding: 1px 15px 1px 15px;
+    &:hover{
+        color:black;
+        background-color: #fcffff;
+        text-decoration: none;
+        padding: 1px 15px 1px 15px; 
+    }
+}
+
+// alertas de erro
+#div_alerta_erro{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+//scss dos projetos
+@import "./projetos.scss"

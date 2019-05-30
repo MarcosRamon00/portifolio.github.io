@@ -1,107 +1,84 @@
+body {
+  background-color: #fcffff; }
 
+i {
+  margin: 5px; }
 
-body{/*cor do fundo*/
-    background-color: #fcffff;
-}
-i{
-    margin:5px;
-}
-/*--titulo -- */
-#titulo{
-    font-size: 2.5em;
-}
-/*--menu--*/
-#menu a{
+#titulo {
+  font-size: 2.5em; }
+
+#menu a {
+  text-decoration: none;
+  color: #111111;
+  border-bottom: 2px solid transparent;
+  margin: 2px; }
+
+#menu a:hover {
+  border-bottom-color: #ffb108; }
+
+#titulo_portifolio {
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+#bloco_texto_sobre_portifolio {
+  background-color: none; }
+  #bloco_texto_sobre_portifolio #btn_noturneMode {
     text-decoration: none;
     color: #111111;
-    border-bottom: 2px solid;
-    margin:2px;
-}
-
-#menu a:hover{
-    border-bottom-color: #ffb108;
-}
-
-/*--projetos--*/
-#titulo_portifolio{
-    margin-top:10px;
-    margin-bottom: 20px;
-}
-
-#bloco_texto_sobre_portifolio{
-    background-color: none;
-}
-#bloco_texto_sobre_portifolio #btn_noturneMode{
-    text-decoration: none;
-    color:#111111;
-    border:1px solid #111111;
+    border: 1px solid #111111;
     border-radius: 10px;
-    padding:5px;
-}
-#bloco_texto_sobre_portifolio #btn_noturneMode{
-    cursor:pointer;
-}
-#bloco_titulo_descricao_portifolio{
-    background-color: none;
-}
-/*projetos*/
-.bloco_projeto{
-    padding: 10px;
-}
-.titulo_projeto_nome{
-    background-color:#fcffff;
-    padding:10px;
-    margin-bottom: 0%;
-    box-shadow: 1px 1px 3px black;
-    border-bottom:none;
-}
-.imagem_projeto{
-    box-shadow: 1px 1px 3px black;
-}
-/*descricao projeto*/
-.bloco_texto{
-    color:black;
-    background-color: #fcffff;
-    padding-bottom: 5px;
-    box-shadow: 1px 1px 3px black; 
-}
-.titulo_descricao_projeto{
-    padding-left: 5px;
-}
-.descricao_projeto{
-    padding-left: 5px;
-}
-.titulo_equipe_projeto{
-    padding-left: 5px;
-    margin: 5px;
-}
-.membro_equipe_projeto{
-    margin:5px;
-}
+    padding: 5px;
+    cursor: pointer; }
 
+#bloco_titulo_descricao_portifolio {
+  background-color: none; }
 
-/*--rodape--*/
-#rodape{
-    bottom:0;
-    margin-top: 20px;
-}
+#rodape {
+  bottom: 0;
+  margin-top: 20px; }
 
-/*contatos*/
-.div_contato .list-inline-item a{
-    color:#fcffff;
-    text-decoration: none;
-    background-color:#ffb108;
-    padding: 1px 15px 1px 15px;
-}
-
-.div_contato .list-inline-item a:hover{
-    color:black;
+.div_contato .list-inline-item a {
+  color: #fcffff;
+  text-decoration: none;
+  background-color: #ffb108;
+  padding: 1px 15px 1px 15px; }
+  .div_contato .list-inline-item a:hover {
+    color: black;
     background-color: #fcffff;
     text-decoration: none;
-    padding: 1px 15px 1px 15px; 
-}
-/*--alertas de erro--*/
-#div_alerta_erro{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+    padding: 1px 15px 1px 15px; }
+
+#div_alerta_erro {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.bloco_projeto {
+  padding: 10px; }
+
+.titulo_projeto_nome {
+  background-color: #fcffff;
+  padding: 10px;
+  margin-bottom: 0%;
+  box-shadow: 1px 1px 3px #111111; }
+
+.imagem_projeto {
+  box-shadow: 1px 1px 3px #111111; }
+
+.bloco_texto {
+  color: #111111;
+  background-color: #fcffff;
+  padding-bottom: 5px;
+  box-shadow: 1px 1px 3px #111111; }
+
+.titulo_descricao_projeto {
+  padding-left: 5px; }
+
+.descricao_projeto {
+  padding-left: 5px; }
+
+.titulo_equipe_projeto {
+  padding-left: 5px;
+  margin: 5px; }
+
+.membro_equipe_projeto {
+  margin: 5px; }

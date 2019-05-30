@@ -1,0 +1,33 @@
+//projetos
+.bloco_projeto{
+    padding:10px;
+}
+.titulo_projeto_nome{
+    background-color: $branco;
+    padding: 10px;
+    margin-bottom: 0%;
+    box-shadow:1px 1px 3px $preto;
+}
+.imagem_projeto{
+    box-shadow:1px 1px 3px $preto;
+}
+//descricao projeto
+.bloco_texto{
+    color:$preto;
+    background-color: $branco;
+    padding-bottom: 5px;
+    box-shadow: 1px 1px 3px $preto;
+}
+.titulo_descricao_projeto{
+    padding-left:5px;
+}
+.descricao_projeto{
+    padding-left: 5px;
+}
+.titulo_equipe_projeto{
+    padding-left: 5px;
+    margin:5px;
+}
+.membro_equipe_projeto{
+    margin:5px;
+}

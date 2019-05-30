@@ -1,0 +1,23 @@
+{
+  "name": "portifolio.github.io",
+  "version": "1.0.0",
+  "description": "Portifólio com jquery, ajax, json e bootstrap 4.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatheusHTTP/portifolio.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatheusHTTP/portifolio.github.io/issues"
+  },
+  "homepage": "https://github.com/MatheusHTTP/portifolio.github.io",
+  "devDependencies": {
+    "sass": "^1.20.1"
+  }
+}
