@@ -2,7 +2,7 @@
     Portifólio com jquery, ajax, json e bootstrap 4.
 
 ## Disponivel em:
-> [portifolio](https://matheushttp.github.io/portifolio/)
+> [portifolio.github.io](https://matheushttp.github.io/portifolio.github.io/)
 
 ## Referências
 ### ajax
